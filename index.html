@@ -1,0 +1,224 @@
+<!--CRIANDO ESTRUTURA BÁSICA DE HTML-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <!--boz icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <!--adicionando o arquivo css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header=cabeçalho-->
+    <header>
+        <!--a = link! | o que tá dentro do href = é para onde será rederecionado,
+        por enquanto deixamos "#" pois n temos link ainda
+        class= seria o nome e portfólio seria o nome do link-->
+        <a href="#" class="logo">Portfólio</a>
+
+        <!--nav =  representa uma seção de uma página que aponta para outras páginas -->
+        <div class="nav">
+            <a href="#home">home</a>
+            <a href="#service">Service</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+
+
+    <!--home section | class= para identificar no css e estilizar|
+    id= identificador para ser usado na manipulação de DOM, 
+    ou seja a estrutura que o js e o html usam para programar|
+    section é um setor inteiro de várias divs-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Nice to meet you</h3>
+            <h1>I am Itallo Andrade</h1>
+            <!--SPAN=DIV DENTRO DE OUTRA DIV, ONDE SE CONTROLA AQUELE TRECHO DENTRO DO S-->
+            <h3> <span>DEVELOPER IN TRAINING</span> <BR>
+                Enrolled in Full Stack development certification</h3>
+
+            <p>
+                I am an architect and urban planner with experience in public administration,<br>
+                where I participated in projects aimed at improving urban environments and <br>
+                enhancing interpersonal skills. I am currently transitioning to the programming field,<br>
+                with the goal of applying technological solutions to problem-solving, <br>
+                combining an analytical and creative perspective developed throughout my professional journey.
+            </p>
+
+
+            <!--colocando os icones (usar site boxIcons).
+            obs tem que colocar o link do css no head (box icons)-->
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-discord-alt'></i></a>
+            </div>
+
+            <!--criação de botão-->
+            <div>
+                <a href="#" class="btn"> Download CV</a>
+            </div>
+
+
+        </div>
+        <!--ADICIONANDO FOTO, obs para remover fundo de foto site -adobe express -->
+        <div class="home-img">
+            <img src="/img/WhatsApp Image 2024-10-24 at 15.37.30.png" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!--service section-->
+    <section class="services" id="services">
+        <h2>Our <span>Services</span></h2>
+
+        <div class="services-box">
+            <!--i=ícone do box -->
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+
+            <p>Here are the projects I have developed in the web development field.<br>
+                Each work reflects my growth in programming and my commitment to quality and efficiency.</p>
+
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+
+
+        <div class="services-box">
+            <h3>Back-End Development</h3>
+            <!--ícone do box-->
+            <i class='bx bx-code-curly'></i>
+
+            <p>We will soon offer Back-End Development services</p>
+
+            <a href="#" class="btn"> Read More</a>
+        </div>
+
+
+
+        <div class="services-box">
+            <!--ícone do box-->
+            <i class='bx bx-mobile-alt'></i>
+            <h3>Mobile Development</h3>
+
+            <p>We will soon offer Mobile Development services</p>
+
+            <a href="#" class="btn"> Read More</a>
+        </div>
+    </section>
+
+
+
+    <!--portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2>Latest <span> Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="/img/blog.JPG" alt="Blog Imagem">
+
+                <!--portfolio-layer=texto que aparece quando passa o mouse em cima do container-->
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        This project was developed during the Ful Stack Developer course,<br>
+                        we used CSS, HTML AND JAVASCRIPT, which showed a little of my journey<br>
+                        as an architect and artist
+                    </p>
+
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+
+
+            <div class="portfolio-box">
+                <img src="/img/calculadora.JPG" alt="Calculadora Imagem">
+
+                <!--portfolio-layer=texto que aparece quando passa o mouse em cima do container-->
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p> 
+                        calculator developed during the Ful Stack Developer course,<br>
+                        We use CSS, HTML AND JAVASCRIPT.
+                    </p>
+
+
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--contact-->
+    <section class="contact" id="contact">
+        <h2>Contact <span>Me!</span></h2>
+
+        <!--estrutura de formulário, action= a página que vai ser enviado os dados-->
+        <form action="">
+            <!--1-cria-se a div com nome input onde irão os input da mesma linha
+            obs. input= input; type=tipo; placeholder=atributo que vai um nome cinza claro dentro
+            -->
+            <div class="inputbox">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="E-mail">
+            </div>
+
+            <div class="inputbox">
+                <input type="number" placeholder="Phone number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <!--textarea = caixa de texto; cols= numero de coluna (largura); rows=linhas -->
+            <textarea cols="30" rows="8" placeholder="Message"></textarea>
+
+            <a heref="#" class="btn">Send Message</a>
+        </form>
+    </section>
+
+
+    <!--Section About-->
+    <div class="about" id="about">
+        <div class="about-img">
+            <img src="/img/WhatsApp Image 2024-10-24 at 15.37.30.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h3>About Me</h3>
+            <h1>Full-Stack <span>Developer</span> and <span>Teacher</span></h1>
+
+            <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <!--$copy= simbolo de compyright; -->
+    <footer>
+        <p>Copyright $Copy; 2024 by &lt;/Itallo Andrade&gt;. All rights Reserved.</p>
+    </footer>
+
+
+</body>
+
+<!--adicionando o arquivo js-->
+<script src="js/script.js"></script>
+
+</html>
